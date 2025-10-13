@@ -6,41 +6,34 @@ package KI305.Bakhur.Lab3;
 public class TestDog extends Dog implements Experimental {
     private boolean trained;
 
-    /**
-     * Конструктор
-     * @param name ім'я собаки
-     * @param age вік собаки
-     * @param weight вага собаки
-     */
     public TestDog(String name, int age, double weight) {
         super(name, age, weight);
         this.trained = false;
     }
 
-    /** Реалізація абстрактного методу bark() */
     @Override
     public void bark() {
-        System.out.println(name + " гавкає під час експерименту!");
+        System.out.println(getName() + " гавкає під час експерименту!");
     }
 
-    /** Реакція на команду */
     @Override
     public void testReaction() {
-        System.out.println(name + " реагує на команду — сідає та піднімає лапу.");
+        System.out.println(getName() + " реагує на команду — сідає та піднімає лапу.");
         trained = true;
     }
 
-    /** Нагорода за виконання команди */
     @Override
     public void reward() {
         if (trained)
-            System.out.println(name + " отримує смачний кусочок за гарну поведінку!");
+            System.out.println(getName() + " отримує смачний кусочок за гарну поведінку!");
         else
-            System.out.println(name + " ще не виконав команду, нагороди немає.");
+            System.out.println(getName() + " ще не виконав команду, нагороди немає.");
     }
 
-    /** Вивід розширеної інформації */
     public void fullInfo() {
-        System.out.println("Ім'я: " + name + ", Вік: " + age + ", Вага: " + weight + " кг, Навчений: " + trained);
+        System.out.println("Ім'я: " + getName() +
+                ", Вік: " + getAge() +
+                ", Вага: " + getWeight() +
+                " кг, Навчений: " + trained);
     }
 }

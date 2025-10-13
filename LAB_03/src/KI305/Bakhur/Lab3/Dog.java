@@ -5,9 +5,9 @@ package KI305.Bakhur.Lab3;
  * Містить спільні поля та методи для всіх собак
  */
 public abstract class Dog {
-    protected String name;
-    protected int age;
-    protected double weight;
+    private String name;
+    private int age;
+    private double weight;
 
     /**
      * Конструктор
@@ -34,4 +34,13 @@ public abstract class Dog {
         age++;
         System.out.println(name + " святкує день народження! Йому тепер " + age + " років.");
     }
+
+    // --- Гетери і сетери ---
+    public String getName() { return name; }
+    public int getAge() { return age; }
+    public double getWeight() { return weight; }
+
+    public void setName(String name) { this.name = name; }
+    public void setAge(int age) { this.age = age; }
+    public void setWeight(double weight) { this.weight = weight; }
 }
