@@ -5,7 +5,7 @@ package KI305.Bakhur.Lab3;
  */
 public interface Experimental {
     /** Метод моделює реакцію собаки під час експерименту */
-    void testReaction();
+    void testReaction() ;
 
     /** Метод моделює нагороду після виконання команди */
     void reward();
