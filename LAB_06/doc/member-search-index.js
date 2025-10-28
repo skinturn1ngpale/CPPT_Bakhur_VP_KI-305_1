@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"KI305.Bakhur.Lab6","c":"Item","l":"getWeight()"},{"p":"KI305.Bakhur.Lab6","c":"Item","l":"printInfo()"}];updateSearchResults();
